@@ -1,0 +1,217 @@
+body {
+  --footer-bg:     transparent;
+  --footer-fg:     hsl(0,0%,75%);
+  --footer-fg-hov: hsl(0,0%,30%);
+  --footer-border: 7px;
+  --footer-height: 120px; }
+
+div.footer {
+  height: var(--footer-height);
+  color: var(--footer-fg);
+  background: var(--footer-bg);
+  border-top: var(--footer-border) solid var(--footer-fg);
+  padding-top: 10px; }
+  div.footer div.credits {
+    top: 12px;
+    font-size: 15px;
+    text-align: right;
+    letter-spacing: 0.5px; }
+    div.footer div.credits a {
+      color: inherit; }
+      div.footer div.credits a:hover {
+        color: var(--footer-fg-hov); }
+    div.footer div.credits > * + * {
+      margin-left: 8px; }
+    div.footer div.credits svg {
+      display: inline-block;
+      vertical-align: middle; }
+
+.app .content {
+  display: block;
+  margin: 0px auto;
+  position: relative;
+  max-width: 700px; }
+
+.app.standard .content {
+  max-width: 700px; }
+
+.app.full-screen .content {
+  max-width: 100%;
+  margin: 0 20px; }
+
+div.layout div.header {
+  display: block;
+  margin: 0px auto;
+  position: relative;
+  max-width: 100%;
+  width: 100%;
+  height: 90px; }
+
+div.layout div.info {
+  display: block;
+  margin: 0px auto;
+  position: relative;
+  height: 50px; }
+
+div.layout div.main {
+  display: block;
+  margin: 0px auto;
+  position: relative; }
+
+div.layout div.footer {
+  display: block;
+  margin: 0px auto;
+  position: relative;
+  max-width: 100%;
+  width: 100%;
+  height: 120px;
+  position: relative; }
+
+div.layout div.header {
+  background-color: white; }
+  div.layout div.header h1 {
+    margin: 0; }
+  div.layout div.header div.title {
+    position: relative;
+    top: 10px;
+    left: -10px; }
+    div.layout div.header div.title span.text {
+      font-size: 36px;
+      font-weight: 400;
+      position: relative;
+      top: 10px;
+      left: -10px; }
+
+div.layout div.info {
+  background-color: #bdbdff;
+  padding: 0; }
+
+div.layout div.main {
+  background-color: white;
+  padding: 10px 0 20px 0; }
+
+.info .config .button {
+  color: #8080ff;
+  text-align: center;
+  font-weight: bold;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background-color: #b3b3ff;
+  padding: 0 10px; }
+
+.info .config .button.active {
+  color: white;
+  border-color: #8080ff;
+  background-color: #8080ff; }
+
+.info .config .button:hover {
+  color: white;
+  cursor: pointer; }
+
+.info .config .button-group {
+  display: -ms-flexbox;
+  display: flex;
+  display: -webkit-flex; }
+  .info .config .button-group * {
+    -ms-flex-positive: 1;
+        flex-grow: 1; }
+
+.app .status {
+  font-weight: bold;
+  text-align: center;
+  margin: 5px 0 10px 0; }
+
+.app .content.green .status {
+  color: green; }
+
+.app .content.orange .status {
+  color: orange; }
+
+.app .content.red .status {
+  color: red; }
+
+.app .content.green circle.tunnel {
+  stroke: green; }
+
+.app .content.orange circle.tunnel {
+  stroke: orange; }
+
+.app .content.red circle.tunnel {
+  stroke: red; }
+
+.app {
+  font-family: 'Helvetica Neue', Verdana, Helvetica, Arial, sans-serif; }
+  .app .config .mode {
+    display: inline-block; }
+  .app .config div.button-group .button {
+    line-height: 50px; }
+  .app .config div.buttons-right {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    height: 50px; }
+    .app .config div.buttons-right > * + * {
+      margin-left: 2px; }
+  .app .config .full-screen img {
+    width: 16px; }
+  .app .speed {
+    text-align: center;
+    margin: 0 0 10px 0;
+    font-weight: bold; }
+  .app .controls {
+    text-align: center; }
+    .app .controls .controls-label {
+      font-weight: bold; }
+    .app .controls .wind, .app .controls .sail, .app .controls .boat, .app .controls .reset {
+      display: inline-block; }
+    .app .controls .sail, .app .controls .boat, .app .controls .reset {
+      margin-left: 10px; }
+  .app .svg-container.tunnel {
+    text-align: center; }
+    .app .svg-container.tunnel svg circle.tunnel {
+      fill: none;
+      stroke: black;
+      stroke-width: 3px; }
+  .app .svg-container.grid {
+    padding: 0; }
+    .app .svg-container.grid svg {
+      border: 3px solid #333333;
+      background-color: #ebebff; }
+  .app .svg-container svg .grid line {
+    stroke-width: 1.5px;
+    stroke: white; }
+  .app .svg-container svg .boat line, .app .svg-container svg .boat path, .app .svg-container svg .boat rect.tiller, .app .svg-container svg .boat ellipse.mast {
+    stroke-width: 2px; }
+  .app .svg-container svg .boat path, .app .svg-container svg .boat rect.tiller, .app .svg-container svg .boat ellipse.mast {
+    stroke: black; }
+  .app .svg-container svg .boat line {
+    stroke: red; }
+  .app .svg-container svg .boat path {
+    fill: white; }
+  .app .svg-container svg .boat rect.tiller {
+    fill: white; }
+  .app .svg-container svg .boat ellipse.mast {
+    fill: none; }
+  .app .svg-container svg .boat .sail path {
+    fill: black;
+    stroke-width: 0; }
+  .app .svg-container svg .boat .sail path.in-irons {
+    fill: none;
+    stroke-width: 6px;
+    stroke-linecap: round; }
+  .app .svg-container svg .arrow {
+    stroke-width: 1.5px; }
+  .app .svg-container svg .arrow.active path {
+    stroke: none;
+    fill: #8080ff; }
+  .app .svg-container svg .arrow.inactive path {
+    stroke: #e5e5e6;
+    fill: white; }
+  .app .svg-container svg .arrow.inactive:hover path {
+    stroke: #8080ff; }
